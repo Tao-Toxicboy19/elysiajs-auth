@@ -2,7 +2,7 @@ import { Auth } from '../../domain/entities/Auth'
 import { HttpError } from '../../domain/errors/HttpError'
 import { IAuthRepository } from '../../domain/interface/IAuthRepository'
 import { JwtPayload } from '../../domain/types/jwt-payload.type'
-import { UserModel } from '../models/User'
+import { UserModel } from '../schemas/UserSchema'
 import { ObjectId, Types } from 'mongoose'
 
 export class AuthRepository implements IAuthRepository {
