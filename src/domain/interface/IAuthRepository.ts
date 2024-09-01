@@ -1,8 +1,6 @@
-import { Auth } from '../entities/Auth'
-import { JwtPayload } from '../types/jwt-payload.type'
+import { Auth } from '../entities'
+import { JwtPayload } from '../types'
 
 export interface IAuthRepository {
     signin(dto: Auth): Promise<JwtPayload>
-    signup(dto: Auth): Promise<JwtPayload>
-    refreshToken(dto: JwtPayload): Promise<JwtPayload>
 }

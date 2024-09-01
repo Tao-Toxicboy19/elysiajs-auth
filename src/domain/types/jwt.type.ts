@@ -18,4 +18,6 @@ export interface CustomContext extends Context {
             token: string
         ) => Promise<false | (Record<string, string | number> & JWTPayloadSpec)>
     }
+    sub: string
+    username: string
 }
